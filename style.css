@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(33, 32, 32);
+  
+    
+}
+.mobile{
+    margin:auto;
+    width: 30vw;
+    height: 40vw;
+    border-radius: 12px;
+    border:  1px solid rgba(221, 222, 228, 0.525);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.ping{
+   margin: 150px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(127, 127, 133);
+    animation: ping .8s linear infinite;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(229, 229, 237, 0.692);
+}
+@keyframes ping {
+    /* 100%{transform: scale(1.3); opacity: 0.3; transition: 0.2s; }
+    60%{transform: scale(1.5); opacity: 0.2; transition: 0.2s; }
+    30%{transform: scale(2); opacity: 0.1; transition: 0.2s;}
+    0%{transform: scale(0.5); opacity: 0.8; transition: 0.2s;} */
+
+    from{
+        transform: scale(0);
+        opacity: 1;
+    }
+    to{
+        transform: scale(1);
+        opacity: 0;
+    }
+    
+}
